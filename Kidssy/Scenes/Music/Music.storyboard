@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Music View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MusicViewController" id="Y6W-OH-hqX" customClass="MusicViewController" customModule="FairyTales" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtb-hY-CPS">
+                                <rect key="frame" x="8" y="61" width="359" height="167"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="singing" translatesAutoresizingMaskIntoConstraints="NO" id="atu-Q5-Mud">
+                                        <rect key="frame" x="71" y="-22.5" width="217" height="95"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="karaoke" translatesAutoresizingMaskIntoConstraints="NO" id="xOc-oC-0TF">
+                                        <rect key="frame" x="289.5" y="104" width="61.5" height="42"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Sing a Song" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="CUU-Nk-RhM">
+                                        <rect key="frame" x="8" y="108.5" width="204" height="33.5"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="50"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91508805670705784" green="0.55704970586867564" blue="0.59459265884088008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CUU-Nk-RhM" secondAttribute="bottom" id="3us-q8-w2h"/>
+                                    <constraint firstItem="CUU-Nk-RhM" firstAttribute="centerY" secondItem="xOc-oC-0TF" secondAttribute="centerY" id="6J7-LV-Npf"/>
+                                    <constraint firstItem="xOc-oC-0TF" firstAttribute="centerY" secondItem="rtb-hY-CPS" secondAttribute="centerY" multiplier="1.5" id="GqZ-tt-qCV"/>
+                                    <constraint firstItem="xOc-oC-0TF" firstAttribute="height" secondItem="rtb-hY-CPS" secondAttribute="height" multiplier="0.25" id="LUL-TM-vop"/>
+                                    <constraint firstItem="CUU-Nk-RhM" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="xOc-oC-0TF" secondAttribute="leading" id="X6u-L0-kOB"/>
+                                    <constraint firstAttribute="trailing" secondItem="xOc-oC-0TF" secondAttribute="trailing" constant="8" id="gj0-oh-Paf"/>
+                                    <constraint firstItem="CUU-Nk-RhM" firstAttribute="leading" secondItem="rtb-hY-CPS" secondAttribute="leading" constant="8" id="iTC-KM-Hza"/>
+                                    <constraint firstItem="atu-Q5-Mud" firstAttribute="centerY" secondItem="rtb-hY-CPS" secondAttribute="centerY" multiplier="0.3" id="it1-Cm-ZJm"/>
+                                    <constraint firstItem="xOc-oC-0TF" firstAttribute="width" secondItem="rtb-hY-CPS" secondAttribute="width" multiplier="0.171498" id="rp7-Gx-32b"/>
+                                    <constraint firstItem="atu-Q5-Mud" firstAttribute="centerX" secondItem="rtb-hY-CPS" secondAttribute="centerX" id="uij-ql-uz5"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Musics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACS-Lo-zvy">
+                                <rect key="frame" x="16" y="16" width="80" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.0039215686274509803" green="0.0" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                </variation>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MKf-nO-u5d">
+                                <rect key="frame" x="0.0" y="228" width="375" height="439"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ItemCell" id="6oG-Fh-4Am" customClass="ItemCell" customModule="UIComponents">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6oG-Fh-4Am" id="nGj-wC-H1J">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MKf-nO-u5d" secondAttribute="trailing" id="6sL-Rx-Gkj"/>
+                            <constraint firstItem="rtb-hY-CPS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="7VG-zV-PH3"/>
+                            <constraint firstItem="rtb-hY-CPS" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-8" id="CSQ-jE-gbp"/>
+                            <constraint firstItem="rtb-hY-CPS" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.25" id="FpC-3b-ziZ"/>
+                            <constraint firstItem="rtb-hY-CPS" firstAttribute="top" secondItem="ACS-Lo-zvy" secondAttribute="bottom" constant="16" id="HHQ-3F-64B"/>
+                            <constraint firstItem="ACS-Lo-zvy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="a8g-ou-MEE"/>
+                            <constraint firstItem="MKf-nO-u5d" firstAttribute="top" secondItem="rtb-hY-CPS" secondAttribute="bottom" id="bi9-Xg-g8Q"/>
+                            <constraint firstItem="atu-Q5-Mud" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.142857" id="kST-rK-9wY"/>
+                            <constraint firstItem="ACS-Lo-zvy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="l0n-PW-ock"/>
+                            <constraint firstItem="atu-Q5-Mud" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.57971" id="lfn-6O-7ub"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="MKf-nO-u5d" secondAttribute="bottom" id="rba-tU-gHH"/>
+                            <constraint firstItem="MKf-nO-u5d" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vRZ-BN-06r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerPinkView" destination="rtb-hY-CPS" id="JWj-10-o1J"/>
+                        <outlet property="letsSongLabel" destination="CUU-Nk-RhM" id="MUC-qT-Mn2"/>
+                        <outlet property="musicLabel" destination="ACS-Lo-zvy" id="yAu-tO-Btb"/>
+                        <outlet property="musicTableView" destination="MKf-nO-u5d" id="hDO-7n-WEL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="50.892857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="karaoke" width="256" height="256"/>
+        <image name="singing" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

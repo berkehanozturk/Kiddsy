@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  FairyTales
+
+  Created by Berkehan on 21.02.2022.
+  
+*/
+"hello_world" = "hoşgeldin dünyaya";
+"continue" = "Devam et";
+"Educational" = "Eğitici";
+"Music" = "Müzik";
+"Lullabies" = "Ninniler";
+"Fairy Tales" = "Masallar";
+"back" = "Geri";
+"lets_song" = "Hadi Şarkı Söyleyelim";
+"sleep_well" = "Masallarla İyi Uyuyun";
+"learn" = "Birlikte Öğrenelim!";
+"lullabie_sleep" = "Uyumama Yardım Eder misin?";
+"No Internet Connection" = "İnternet Bağlantısı Yok";
+

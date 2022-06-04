@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  FairyTales
+
+  Created by Berkehan on 21.02.2022.
+  
+*/
+"continue" = "Continuar";
+"Educational" = "Educativo";
+"Music" = "Música";
+"Lullabies" = "Canciones de cuna";
+"Fairy Tales" = "Cuentos de hadas";
+"back" = "Atrás";
+"lets_song" = "Vamos a cantar una canción";
+"sleep_well" = "Duerme bien con cuentos de hadas";
+"learn" = "¡Aprendamos juntos!";
+"lullabie_sleep" = "¿Puedes ayudarme a dormir?";
+"No Internet Connection" = "Sin conexión a Internet";

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fairy Tale View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FairyTaleViewController" id="Y6W-OH-hqX" customClass="FairyTaleViewController" customModule="FairyTales" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fairy Tales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55T-7J-nIS">
+                                <rect key="frame" x="16" y="16" width="118" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.0039215686269999999" green="0.0" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                </variation>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rwu-dD-zSj">
+                                <rect key="frame" x="0.0" y="203" width="320" height="365"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ItemCell" id="1iq-0h-uvn" customClass="ItemCell" customModule="UIComponents">
+                                        <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1iq-0h-uvn" id="4Dq-vb-6Hf">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHL-Vu-Rri">
+                                <rect key="frame" x="16" y="61" width="288" height="142"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fairytale" translatesAutoresizingMaskIntoConstraints="NO" id="8cd-xK-YaG">
+                                        <rect key="frame" x="51" y="-15.5" width="186" height="73.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleep Well With Fairy Tales" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="oao-hX-ZXE">
+                                        <rect key="frame" x="8" y="73" width="203.5" height="67"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="50"/>
+                                        </variation>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magicwand" translatesAutoresizingMaskIntoConstraints="NO" id="sJn-eo-Eg7">
+                                        <rect key="frame" x="231" y="89" width="49" height="35.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.72941176470588232" green="0.6705882352941176" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oao-hX-ZXE" secondAttribute="bottom" id="7N8-tS-Daj"/>
+                                    <constraint firstItem="8cd-xK-YaG" firstAttribute="centerX" secondItem="NHL-Vu-Rri" secondAttribute="centerX" id="GDg-kd-9I4"/>
+                                    <constraint firstItem="sJn-eo-Eg7" firstAttribute="centerY" secondItem="NHL-Vu-Rri" secondAttribute="centerY" multiplier="1.5" id="H3b-5d-6fv"/>
+                                    <constraint firstItem="oao-hX-ZXE" firstAttribute="leading" secondItem="NHL-Vu-Rri" secondAttribute="leading" constant="8" id="NEp-LT-WQb"/>
+                                    <constraint firstAttribute="trailing" secondItem="sJn-eo-Eg7" secondAttribute="trailing" constant="8" id="OFa-19-dHz"/>
+                                    <constraint firstItem="oao-hX-ZXE" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="sJn-eo-Eg7" secondAttribute="leading" id="Yej-oV-jGY"/>
+                                    <constraint firstItem="8cd-xK-YaG" firstAttribute="centerY" secondItem="NHL-Vu-Rri" secondAttribute="centerY" multiplier="0.3" id="cfb-9h-S9j"/>
+                                    <constraint firstItem="oao-hX-ZXE" firstAttribute="centerY" secondItem="sJn-eo-Eg7" secondAttribute="centerY" id="fVD-oX-PJz"/>
+                                    <constraint firstItem="sJn-eo-Eg7" firstAttribute="height" secondItem="NHL-Vu-Rri" secondAttribute="height" multiplier="0.25" id="gR1-Nq-T77"/>
+                                    <constraint firstItem="sJn-eo-Eg7" firstAttribute="width" secondItem="NHL-Vu-Rri" secondAttribute="width" multiplier="0.17" id="lK4-yS-hq3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="55T-7J-nIS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="41X-Uz-awg"/>
+                            <constraint firstItem="Rwu-dD-zSj" firstAttribute="top" secondItem="NHL-Vu-Rri" secondAttribute="bottom" id="4Md-te-TX2"/>
+                            <constraint firstItem="NHL-Vu-Rri" firstAttribute="top" secondItem="55T-7J-nIS" secondAttribute="bottom" constant="16" id="5GO-sa-cUC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Rwu-dD-zSj" secondAttribute="trailing" id="E8p-BV-T1M"/>
+                            <constraint firstItem="NHL-Vu-Rri" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="MSo-Cd-VYm"/>
+                            <constraint firstItem="Rwu-dD-zSj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="R5i-gd-JGv"/>
+                            <constraint firstItem="NHL-Vu-Rri" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.25" id="Rhc-fb-H8a"/>
+                            <constraint firstItem="55T-7J-nIS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="VRh-XS-xSZ"/>
+                            <constraint firstItem="8cd-xK-YaG" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.57971" id="fyT-L5-4Sw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NHL-Vu-Rri" secondAttribute="trailing" constant="16" id="ki2-jw-BQX"/>
+                            <constraint firstItem="8cd-xK-YaG" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.13" id="oIL-cd-cKG"/>
+                            <constraint firstItem="Rwu-dD-zSj" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="sjA-y7-ivM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerPurpleView" destination="NHL-Vu-Rri" id="zso-PB-Jth"/>
+                        <outlet property="fairyTaleLabel" destination="55T-7J-nIS" id="Zuy-dl-Oey"/>
+                        <outlet property="fairyTaleTableView" destination="Rwu-dD-zSj" id="5Aa-jY-ll3"/>
+                        <outlet property="sleepWellLabel" destination="oao-hX-ZXE" id="hvk-CR-ZI7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="50.892857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fairytale" width="512" height="512"/>
+        <image name="magicwand" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
